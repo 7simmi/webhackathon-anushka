@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>view</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+        font-family: 'poppins',sans-serif;
+        background-color: rgb(98, 70, 125);
+    }
+   
+        
+    
+    .container{
+        width: 100%;
+        height: 100vh;
+        background-image: url(vscode/purple.png);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        align-content: center;
+        justify-content: center;
+        
+        
+
+    }
+    .card{
+        width: 90%;
+        max-width: 440px;
+        color: #fff;
+        text-align: center;
+        padding: 180px 25px;
+        border: 1px solid rgba(14, 13, 13, 0.3);
+        background: rgb(255, 255, 225,0.3);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(5px);
+        background: rgba( 255, 255, 255, 0.11);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    
+    }
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    background: #fff;
+    color: #81548c;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 30px 0 10px;
+}
+.sec{
+    position: relative;
+    background-color: #81548c;
+    padding: 10px;
+}
+.sec h2{
+    font-size: 3em;
+    color: rgb(61, 15, 68);
+    scroll-margin-bottom: 10px;
+
+}
+.loading{
+    display: flex;
+    width: 240px;
+    justify-content: space-between;
+    position: relative;
+    --duration: 1.5s;
+    --timing-fuction: ease-in-out;
+}
+.loading-item{
+  height: 50px;
+  width : 50px;
+  background-color: rgb(231, 195, 232);
+  border-radius: 50%;
+  opacity: 0.2;
+}
+.loading-item-1{
+    animation: item-1 var(--duration) var(--timing-fuction) infinite alternate;
+}
+.loading-item-2{
+    animation: item-2 var(--duration) var(--timing-fuction) infinite alternate;
+}
+.loading-item-3{
+    animation: item-3 var(--duration) var(--timing-fuction) infinite alternate-reverse;
+}
+@keyframes item-1{
+    0%, 15%{
+        transform: scale(1.3);
+    }
+    25%, 100%{
+        transform: scale(1);   
+     }
+}
+@keyframes item-2{
+    0%, 25%, 75%, 100%{
+        transform: scale(1);
+    }
+    35%, 65%{
+        transform: scale(1.3);
+    }
+}
+.loading-item-4{
+    height: 30px;
+    width:  30px;
+    background-color:rgb(88, 32, 88);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 50%;
+    animation: item-4 var(--duration) var(--timing-fuction) infinite alternate;
+  
+
+}
+@keyframes item-4{
+    0%, 5%{
+        transform:translateX(0);
+        border-radius: 50%;
+        width: 30px;
+    }
+    25%, 75%{
+        width: 50px;
+        border-radius: 15px;
+    }
+    45%, 55%{
+        transform: translateX(95px);
+    }
+    95%, 100%{
+       transform: translateX(190px); 
+    }
+}
+</style>
+<body>
+    
+   
+            <div class="container"> 
+                <div class="card" data-tilt>
+                    
+
+        
+                    <h2>Hello, I'm</h2>
+                        <h2>HERE TO GUIDE </h2>
+                        <h3>INDIAN HISTORICAL PLACES</h3>
+                        
+                        <a href="index2.html" class="btn">view</a>
+
+       </div><br>
+   
+        
+    
+    <div class="loading">
+
+        <div class="loading-item loading-item-1"></div>
+        <div class="loading-item loading-item-2"></div>
+        <div class="loading-item loading-item-3"></div>
+        <div class=" loading-item-4"></div> 
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+</body>
+</html>

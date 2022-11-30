@@ -1,0 +1,35 @@
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-self: center;
+    background-color: rgb(188, 129, 243);
+}
+.loading{
+    display: flex;
+    width: 240px;
+    justify-self: space-between;
+    position: relative;
+}
+.loading-item-1{
+  height: 50px;
+  width : 50px;
+  background-color: rgb(102, 48, 103);
+  border-radius: 50%;
+  opacity: 0.2;
+}
+.loading-item-4{
+    height: 30px;
+    width:  30px;
+    background-color:rgb(102, 48, 103);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 50%;
+
+}
+
+
+
